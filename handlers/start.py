@@ -8,4 +8,5 @@ async def salom_ber(message: types.Message):
 
 def register_start_handler(dp: Dispatcher):
     dp.register_message_handler(salom_ber, commands=['start'])
+    dp.register_message_handler(salom_ber, text="🔙 Orqaga")
 
