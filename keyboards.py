@@ -10,12 +10,9 @@ start_keyboards = ReplyKeyboardMarkup(
     resize_keyboard=True
 )
 
-location_kb = ReplyKeyboardMarkup(
-    keyboard=[
-        [KeyboardButton(text="Lokatsiya jo'natish", request_location=True)]
-    ],
-    resize_keyboard=True
-)
+location_keyboard = types.ReplyKeyboardMarkup(resize_keyboard=True, one_time_keyboard=True, keyboard=[
+    [types.KeyboardButton(text="📍 Lokatsiya jo'natish", request_location=True)]
+])
 
 
 tarjima_kb = types.InlineKeyboardMarkup(inline_keyboard=[
